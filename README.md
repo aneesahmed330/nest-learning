@@ -6,3 +6,10 @@ validation:
 
 extend Dto's:
 need package npm i @nestjs/mapped-types
+
+database integration module:
+- i need typeorm packages
+- npm i @nestjs/typeorm typeorm pg
+
+
+

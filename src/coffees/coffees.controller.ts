@@ -24,7 +24,7 @@ export class CoffeesController {
   }
 
   @Get(':id')
-  get_specific_coffee(@Param('id') id: string) {
+  get_specific_coffee(@Param('id') id: number) {
     return this.coffeeService.get_specific_coffee(id);
     // return `This action return specific coffee of {id} ${id}! ☕`;
   }
@@ -37,7 +37,7 @@ export class CoffeesController {
 
   @Patch(':id')
   update_coffee(
-    @Param('id') id: string,
+    @Param('id') id: number,
     @Body() updateCoffeeDto: UpdateCoffeeDto,
   ) {
     return this.coffeeService.update_coffee(id, updateCoffeeDto);
@@ -45,7 +45,7 @@ export class CoffeesController {
   }
 
   @Delete(':id')
-  delete_coffee(@Param('id') id: string) {
+  delete_coffee(@Param('id') id: number) {
     return this.coffeeService.delete_coffee(id);
     // return `This action return delete coffee of {id} ${id}! ☕`;
   }

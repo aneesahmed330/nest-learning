@@ -13,3 +13,17 @@ database integration module:
 
 
 
+
+- npx typeorm migration:revert
+- npx typeorm migration:run
+
+Manual migration
+npx typeorm migration:create -n CoffeeRefactor
+
+Automate , change in entity then build and run command
+- npx typeorm migration:generate -n SchemaSync
+
+
+
+## Dependency Injection
+

@@ -14,6 +14,11 @@ import { CoffeesModule } from './coffees/coffees.module';
       username: 'postgres',
       password: 'pass123',
       database: 'postgres',
+      entities: ['dist/**/*.entity.js'],
+      migrations: ['dist/migrations/*.js'],
+      cli: {
+        migrationsDir: 'src/migrations',
+      },
       autoLoadEntities: true,
       synchronize: true,
     }),
